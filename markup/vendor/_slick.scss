@@ -1,0 +1,124 @@
+.slick-track {
+  @include flex;
+}
+
+.slick-list.draggable {
+  overflow: hidden;
+
+  @include tablet() {
+    margin: 0 -20px;
+  }
+}
+
+.slick-slide {
+  @include tablet() {
+    margin: 0 20px;
+  }
+}
+
+.slick-prev.slick-arrow,
+.slick-next.slick-arrow {
+  display: none !important;
+
+  @include desktop() {
+    display: inline-flex !important;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    border: none;
+    background: none;
+    font-size: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -40px;
+    z-index: 1;
+
+    @include desktop-lg() {
+      left: -50px;
+    }
+
+    @include widescreen() {
+      left: -80px;
+    }
+
+    &::before {
+      content: "";
+      width: 50%;
+      height: 50%;
+      border: 2px solid $orange;
+      border-right: none;
+      border-bottom: none;
+      transform: rotate(-45deg);
+      cursor: pointer;
+    }
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.slick-next.slick-arrow {
+  @include desktop() {
+    left: auto;
+    right: -40px;
+  }
+
+  @include desktop-lg() {
+    right: -50px;
+  }
+
+  @include widescreen() {
+    right: -80px;
+  }
+
+  &::before {
+    @include desktop() {
+      transform: rotate(135deg);
+    }
+  }
+}
+
+.slick-dots {
+  @include list-unstyled;
+  @include flex-center;
+  position: absolute;
+  top: auto;
+  left: 0;
+  right: 0;
+  bottom: -40px;
+  margin: 0 -5px;
+
+  @include tablet() {
+    bottom: -70px;
+  }
+
+  li {
+    padding: 0 5px;
+
+    button {
+      font-size: 0;
+      border: none;
+      background: none;
+      width: 10px;
+      height: 10px;
+      border: 1px solid $orange;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+    &:hover {
+      button {
+        background-color: $orange;
+      }
+    }
+  }
+
+  .slick-active {
+    button {
+      background-color: $orange;
+    }
+  }
+}

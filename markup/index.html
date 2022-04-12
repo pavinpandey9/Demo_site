@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./js/app.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <header id="header">
+            <div class="container">
+                <div class="header-holder">
+                    <div class="logo">
+                        <a href="#">
+                            <span>Logo</span>
+                        </a>
+                    </div>
+                    <a href="#" class="nav-opener">
+                        <span>Menu</span>
+                    </a>
+                    <div class="main-nav">
+                        <ul class="main-nav__nav">
+                            <li class="active">
+                                <a href="#hero">About</a>
+                            </li>
+                            <li>
+                                <a href="#services">Services</a>
+                            </li>
+                            <li>
+                                <a href="#testimonial">Testimonial</a>
+                            </li>
+                            <li>
+                                <a href="#contact-us">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="page-holder">
+            <main id="main">
+                <section id="hero" class="hero">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col order-md-2">
+                                <div class="hero-img">
+                                    <img src="./images/img01.png" alt="Image description">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="about-us">
+                                    <div class="about-us__title">
+                                        <h1 class="text-white">About us</h1>
+                                    </div>
+                                    <div class="about-us__info">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, maiores
+                                            voluptatibus? Suscipit, eaque. Nihil aliquid incidunt labore itaque
+                                            accusamus
+                                            quae,
+                                            tempore inventore, qui illum rerum repellendus ad. Placeat, rerum fugit ex
+                                            quis
+                                            nihil temporibus laborum in nemo architecto iusto quos.</p>
+                                    </div>
+                                </div>
+                                <div class="btn-holder">
+                                    <a href="#" class="btn btn--lg">Get Started</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="services" class="services">
+                    <div class="services__title text-center">
+                        <h2 class="h1 text-white">Services</h2>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <a href="#" class="card service bg-white">
+                                    <div class="service__icon">
+                                        <i class="icon-holder fa-solid fa-gear"></i>
+                                    </div>
+                                    <div class="service__title">
+                                        <span>Service 1</span>
+                                    </div>
+                                    <div class="service__info">
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae facilis
+                                            eum, aut inventore voluptatem dolorum quasi nisi, culpa autem enim
+                                            consequatur. Officiis vero id deserunt!</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="#" class="card service bg-white">
+                                    <div class="service__icon">
+                                        <i class="icon-holder fa-solid fa-magnifying-glass-chart"></i>
+                                    </div>
+                                    <div class="service__title">
+                                        <span>Service 2</span>
+                                    </div>
+                                    <div class="service__info">
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae facilis
+                                            eum, aut inventore voluptatem dolorum quasi nisi, culpa autem enim
+                                            consequatur. Officiis vero id deserunt!</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="#" class="card service bg-white">
+                                    <div class="service__icon">
+                                        <i class="icon-holder fa-solid fa-blog"></i>
+                                    </div>
+                                    <div class="service__title">
+                                        <span>Service 3</span>
+                                    </div>
+                                    <div class="service__info">
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae facilis
+                                            eum, aut inventore voluptatem dolorum quasi nisi, culpa autem enim
+                                            consequatur. Officiis vero id deserunt!</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="testimonial" class="testimonial">
+                    <div class="testimonial__title text-center">
+                        <h2 class="h1 text-white">Testimonial</h2>
+                    </div>
+                    <div class="container">
+                        <div class="testimonial-slider">
+                            <div class="card client bg-white">
+                                <div class="client__review">
+                                    <blockquote>
+                                        <i class="text-green icon-holder fa-solid fa-quote-left"></i>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+                                        sapiente,
+                                        inventore alias delectus quam temporibus quaerat fuga ut facere cum!
+                                        <i class="icon-holder fa-solid fa-quote-right"></i>
+                                    </blockquote>
+                                </div>
+                                <div class="client__img">
+                                    <img src="./images/profile-img01.svg" alt="Image description">
+                                </div>
+                                <div class="client__name">
+                                    <span>Abc</span>
+                                </div>
+                                <div class="client__profile">
+                                    <span>Founder</span>
+                                </div>
+                            </div>
+                            <div class="card client bg-white">
+                                <div class="client__review">
+                                    <blockquote>
+                                        <i class="icon-holder fa-solid fa-quote-left"></i>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+                                        sapiente,
+                                        inventore alias delectus quam temporibus quaerat fuga ut facere cum!
+                                        <i class="icon-holder fa-solid fa-quote-right"></i>
+                                    </blockquote>
+                                </div>
+                                <div class="client__img">
+                                    <img src="./images/profile-img02.svg" alt="Image description">
+                                </div>
+                                <div class="client__name">
+                                    <span>Def</span>
+                                </div>
+                                <div class="client__profile">
+                                    <span>Manager</span>
+                                </div>
+                            </div>
+                            <div class="card client bg-white">
+                                <div class="client__review">
+                                    <blockquote>
+                                        <i class="icon-holder fa-solid fa-quote-left"></i>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+                                        sapiente,
+                                        inventore alias delectus quam temporibus quaerat fuga ut facere cum!
+                                        <i class="icon-holder fa-solid fa-quote-right"></i>
+                                    </blockquote>
+                                </div>
+                                <div class="client__img">
+                                    <img src="./images/profile-img03.svg" alt="Image description">
+                                </div>
+                                <div class="client__name">
+                                    <span>Ghi</span>
+                                </div>
+                                <div class="client__profile">
+                                    <span>Co-Founder</span>
+                                </div>
+                            </div>
+                            <div class="card client bg-white">
+                                <div class="client__review">
+                                    <blockquote>
+                                        <i class="text-green icon-holder fa-solid fa-quote-left"></i>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+                                        sapiente,
+                                        inventore alias delectus quam temporibus quaerat fuga ut facere cum!
+                                        <i class="icon-holder fa-solid fa-quote-right"></i>
+                                    </blockquote>
+                                </div>
+                                <div class="client__img">
+                                    <img src="./images/profile-img01.svg" alt="Image description">
+                                </div>
+                                <div class="client__name">
+                                    <span>Abc</span>
+                                </div>
+                                <div class="client__profile">
+                                    <span>Founder</span>
+                                </div>
+                            </div>
+                            <div class="card client bg-white">
+                                <div class="client__review">
+                                    <blockquote>
+                                        <i class="icon-holder fa-solid fa-quote-left"></i>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+                                        sapiente,
+                                        inventore alias delectus quam temporibus quaerat fuga ut facere cum!
+                                        <i class="icon-holder fa-solid fa-quote-right"></i>
+                                    </blockquote>
+                                </div>
+                                <div class="client__img">
+                                    <img src="./images/profile-img02.svg" alt="Image description">
+                                </div>
+                                <div class="client__name">
+                                    <span>Def</span>
+                                </div>
+                                <div class="client__profile">
+                                    <span>Manager</span>
+                                </div>
+                            </div>
+                            <div class="card client bg-white">
+                                <div class="client__review">
+                                    <blockquote>
+                                        <i class="icon-holder fa-solid fa-quote-left"></i>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+                                        sapiente,
+                                        inventore alias delectus quam temporibus quaerat fuga ut facere cum!
+                                        <i class="icon-holder fa-solid fa-quote-right"></i>
+                                    </blockquote>
+                                </div>
+                                <div class="client__img">
+                                    <img src="./images/profile-img03.svg" alt="Image description">
+                                </div>
+                                <div class="client__name">
+                                    <span>Ghi</span>
+                                </div>
+                                <div class="client__profile">
+                                    <span>Co-Founder</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="contact-us" class="contact-us">
+                    <div class="contact-us__title text-center">
+                        <h2 class="h1 text-white">Contact us</h2>
+                    </div>
+                    <div class="container">
+                        <div class="contact-info">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="contact-text">
+                                        <span class="h4 text-white">Get in touch</span>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores neque
+                                            suscipit
+                                            expedita quis animi minus iusto, nesciunt provident similique dolore!</p>
+                                    </div>
+                                    <ul class="contact-list">
+                                        <li>
+                                            <span>
+                                                <i class="icon-holder fa-solid fa-location-dot"></i>
+                                                Address
+                                            </span>
+                                            <address>
+                                                B-101, 20 Street, <br>
+                                                Mumbai, India.
+                                            </address>
+                                        </li>
+                                        <li>
+                                            <span>
+                                                <i class="icon-holder fa-solid fa-envelope"></i>
+                                                Email
+                                            </span>
+                                            <a href="mailto:abc@gmail.com">abc@gmail.com</a>
+                                        </li>
+                                        <li>
+                                            <span>
+                                                <i class="icon-holder fa-solid fa-phone"></i>
+                                                Phone
+                                            </span>
+                                            <a href="tel:0123456789">0123456789</a>
+                                        </li>
+                                    </ul>
+                                    <ul class="social-networks">
+                                        <li>
+                                            <a href="#">
+                                                <span class="icon-holder"> <i class="fa-brands fa-twitter"></i></span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="icon-holder"><i class="fa-brands fa-facebook-f"></i></span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="icon-holder"><i
+                                                        class="fa-brands fa-linkedin-in"></i></span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="icon-holder"><i class="fa-brands fa-instagram"></i></span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col">
+                                    <form action="#" class="contact-form">
+                                        <div class="input-holder">
+                                            <input type="text" placeholder="Your Name" required>
+                                        </div>
+                                        <div class="input-holder">
+                                            <input type="email" placeholder="Your Email" required>
+                                        </div>
+                                        <div class="input-holder">
+                                            <input type="text" placeholder="Subject" required>
+                                        </div>
+                                        <div class="input-holder">
+                                            <textarea placeholder="Message" required></textarea>
+                                        </div>
+                                        <div class="btn-holder">
+                                            <button type="submit">Send Message</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+
+        <footer id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col order-md-2">
+                        <ul class="footer-links">
+                            <li>
+                                <a href="#hero">About</a>
+                            </li>
+                            <li>
+                                <a href="#services">Services</a>
+                            </li>
+                            <li>
+                                <a href="#testimonial">Testimonial</a>
+                            </li>
+                            <li>
+                                <a href="#contact-us">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <div class="copyright text-white">
+                            <span>Copyright ©2022, <a href="#">Pavin</a>. All Rights Reserved.</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+
+        <a href="#" class="go-to-top">
+            <i class="icon-holder fa-solid fa-arrow-up"></i>
+        </a>
+    </div>
+</body>
+
+</html>

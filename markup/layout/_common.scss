@@ -1,0 +1,117 @@
+#wrapper {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-image: linear-gradient(to right, $black-200, #3a6073);
+    z-index: -1;
+  }
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 25px;
+  margin: 0 auto;
+
+  @include tablet() {
+    padding: 0 40px;
+  }
+
+  @include desktop() {
+    padding: 0 60px;
+  }
+
+  @include widescreen() {
+    padding: 0 25px;
+  }
+
+  &--fluid {
+    max-width: none;
+  }
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -20px;
+}
+
+.col {
+  padding: 0 20px;
+  width: 100%;
+}
+
+.has-bg {
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.card {
+  box-shadow: 0px 8px 16px 0px rgba($color: $black, $alpha: 0.15);
+  border-radius: 5px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-white {
+  color: $white;
+}
+
+.bg-white {
+  background-color: $white;
+}
+
+.order-md-2 {
+  @include tablet() {
+    order: 2;
+  }
+}
+
+.go-to-top {
+  width: 50px;
+  height: 50px;
+  @include flex-center;
+  position: fixed;
+  bottom: 50px;
+  right: 25px;
+  background: rgba($color: $orange, $alpha: 0.9);
+  border-radius: 50%;
+  transition: opacity 0.3s linear, visibility 0.3s linear;
+  z-index: 99;
+
+  .icon-holder {
+    color: $white;
+    font-size: 20px;
+  }
+}
+
+.animation {
+  position: relative;
+  animation: moveUp 0.8s;
+}
+
+@keyframes moveUp {
+  0% {
+    transform: translateY(180px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}

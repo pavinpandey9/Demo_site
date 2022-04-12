@@ -1,0 +1,24 @@
+@import "./mixin";
+@import "./variable";
+
+input,
+textarea {
+  font-family: "Poppins", sans-serif;
+  @include font-size(14, 18);
+  font-weight: 500;
+  outline: none;
+  padding: 15px;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid $gray;
+  color: $black-100;
+
+  @include desktop() {
+    @include font-size(16, 20);
+  }
+}
+
+textarea {
+  min-height: 160px;
+  resize: none;
+}

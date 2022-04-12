@@ -1,0 +1,51 @@
+.hero {
+  padding-top: 140px;
+  max-width: 400px;
+  margin: 0 auto;
+
+  @include tablet() {
+    max-width: none;
+    margin: 0;
+    padding-top: 160px;
+  }
+
+  .row {
+    @include tablet() {
+      align-items: center;
+    }
+
+    .col {
+      @include tablet() {
+        width: 50%;
+      }
+    }
+  }
+}
+
+.about-us {
+  @include font-size(16, 30);
+  color: $white;
+  max-width: 540px;
+  padding-bottom: 15px;
+
+  @include tablet() {
+    max-width: 380px;
+  }
+
+  @include desktop() {
+    @include font-size(18, 35);
+    max-width: 400px;
+  }
+
+  @include desktop-lg() {
+    max-width: 480px;
+  }
+
+  &__title {
+    padding-bottom: 10px;
+  }
+}
+
+.hero-img {
+  margin-bottom: 50px;
+}

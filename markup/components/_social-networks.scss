@@ -1,0 +1,22 @@
+.social-networks {
+  @include list-unstyled;
+  @include flex;
+  margin: 0 -15px;
+
+  li {
+    padding: 0 15px;
+    margin-bottom: 20px;
+
+    a {
+      color: $white;
+
+      .icon-holder {
+        font-size: 20px;
+      }
+
+      &:hover {
+        color: $orange;
+      }
+    }
+  }
+}

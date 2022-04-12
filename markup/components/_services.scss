@@ -1,0 +1,117 @@
+.services {
+  position: relative;
+  padding: 80px 0 25px;
+
+  @include tablet() {
+    padding: 90px 0;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 20%;
+    bottom: 0;
+    background-color: $white;
+    z-index: -1;
+
+    @include phone() {
+      top: 25%;
+    }
+
+    @include tablet() {
+      top: 30%;
+    }
+
+    @include desktop() {
+      top: 50%;
+    }
+  }
+
+  &__title {
+    padding-bottom: 45px;
+  }
+
+  .row {
+    @include tablet() {
+      justify-content: center;
+    }
+
+    .col {
+      @include tablet() {
+        display: flex;
+        width: 50%;
+      }
+
+      @include desktop() {
+        width: 33.33%;
+      }
+    }
+  }
+}
+
+.service {
+  display: block;
+  @include font-size(14, 24);
+  max-width: 400px;
+  padding: 40px 30px;
+  color: $black;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  text-align: center;
+  border: 1px solid rgba($color: $orange, $alpha: 0.8);
+
+  @include tablet() {
+    max-width: none;
+  }
+
+  &__icon {
+    padding-bottom: 30px;
+
+    .icon-holder {
+      font-size: 40px;
+      color: $orange;
+    }
+  }
+
+  &__title {
+    @include font-size(16, 20);
+    font-weight: 600;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 18px;
+      width: 30px;
+      border-bottom: 2px solid $orange;
+      transition: width 0.25s ease-in-out;
+    }
+  }
+
+  &:hover {
+    background-color: $orange;
+    color: $white;
+
+    @include tablet() {
+      border: none;
+      transform: scale(1.02);
+    }
+
+    .service__title::after {
+      border-color: $white;
+    }
+
+    .service__icon {
+      .icon-holder {
+        color: $white;
+      }
+    }
+  }
+}

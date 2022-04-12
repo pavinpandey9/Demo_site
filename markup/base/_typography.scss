@@ -1,0 +1,115 @@
+@import "./variable";
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+  line-height: 1;
+  font-weight: 700;
+  color: $black;
+  margin: 0 0 15px;
+}
+
+h1,
+.h1 {
+  @include font-size(35, 40);
+
+  @include tablet() {
+    @include font-size(40, 45);
+  }
+
+  @include desktop() {
+    @include font-size(50, 55);
+  }
+
+  @include desktop-lg() {
+    @include font-size(60, 65);
+  }
+}
+
+h2,
+.h2 {
+  @include font-size(25, 30);
+
+  @include tablet() {
+    @include font-size(30, 35);
+  }
+
+  @include desktop-lg() {
+    @include font-size(40, 45);
+  }
+}
+
+h3,
+.h3 {
+  @include font-size(20, 25);
+
+  @include tablet() {
+    @include font-size(25, 30);
+  }
+
+  @include desktop-lg() {
+    @include font-size(30, 35);
+  }
+}
+
+h4,
+.h4 {
+  @include font-size(15, 20);
+
+  @include tablet() {
+    @include font-size(20, 25);
+  }
+
+  @include desktop-lg() {
+    @include font-size(25, 30);
+  }
+}
+
+h5,
+.h5 {
+  @include font-size(14, 18);
+
+  @include tablet() {
+    @include font-size(18, 22);
+  }
+
+  @include desktop-lg() {
+    @include font-size(22, 26);
+  }
+}
+
+h6,
+.h6 {
+  @include font-size(12, 16);
+
+  @include tablet() {
+    @include font-size(16, 20);
+  }
+
+  @include desktop-lg() {
+    @include font-size(20, 24);
+  }
+}
+
+p {
+  margin-bottom: 15px;
+}
+
+a {
+  color: $orange;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+
+  &:hover {
+    color: darken($color: $orange, $amount: 10%);
+  }
+}

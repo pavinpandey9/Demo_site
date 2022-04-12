@@ -1,0 +1,51 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 25px 0;
+  background-color: $black-200;
+  border-bottom: 1px solid $white;
+  z-index: 99;
+
+  @include tablet() {
+    background: none;
+    border: none;
+    padding: 15px 0;
+  }
+}
+
+header.sticky {
+  background-color: $black-200;
+  transition: 0.2s ease-in-out;
+
+  @include tablet() {
+    padding: 5px 0;
+    border-bottom: 1px solid $white;
+  }
+}
+
+.header-holder {
+  @include tablet() {
+    @include flex-between;
+  }
+}
+
+.logo {
+  width: 140px;
+  font-weight: 700;
+  @include font-size(24, 28);
+
+  @include tablet() {
+    padding: 20px 0;
+  }
+
+  a {
+    color: $white;
+    position: relative;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
